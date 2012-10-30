@@ -1,10 +1,5 @@
 #include <iostream>
-
-void display(int* arr,int length)
-{
-  for(int i=0;i<length;i++)
-    std::cout<<arr[i]<<"\t";
-}
+#include "../common.h"
 //Sort the array in Place
 //Adapted from CLRS p18
 void sort(int* arr, int length)
@@ -33,5 +28,5 @@ int main()
 {
   int list[5]={1,5,2,6,8};
   sort(list,5);
-  display(list,5);
+  assertSorted(list,5);
 }
